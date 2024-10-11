@@ -15,7 +15,7 @@ const Gemini = () => {
     setError('');
 
     try {
-      const res = await axios.post(`https://cors-anywhere.herokuapp.com/https://gemini.googleapis.com/v1/ask`, {
+      const res = await axios.post(`https://gemini.googleapis.com/v1/ask`, {
         question: question,
       }, {
         headers: {
